@@ -11,7 +11,7 @@ import './App.css'
 const processing = getDefaultEuiMarkdownProcessingPlugins();
 processing[1][1].components.timeline = () => <span>5</span>;
 const parsing = getDefaultEuiMarkdownParsingPlugins();
-export const Foo = () => {
+export default () => {
   return (
     <div>
       <EuiMarkdownEditor
