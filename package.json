@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@elastic/charts": "^20.0.0",
     "@elastic/datemath": "^5.0.2",
-    "@elastic/eui": "link:~/src/eui/lib",
-    "@types/react": "^16.8.0",
-    "@types/react-dom": "^16.8.2",
+    "@elastic/eui": "/Users/thompsongl/src/eui/elastic-eui-29.4.0.tgz",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
     "moment": "^2.24.0",
-    "react": "link:node_modules/@elastic/eui/node_modules/react",
-    "react-dom": "link:node_modules/@elastic/eui/node_modules/react-dom",
+    "moment-timezone": "^0.5.31",
+    "prop-types": "^15.5.0",
+    "react": "^16.12",
+    "react-dom": "^16.12",
     "react-scripts": "2.1.8",
-    "styled-components": "^4.3.2",
-    "styled-jsx": "^3.2.1",
-    "typescript": "^3.3.0"
+    "typescript": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
