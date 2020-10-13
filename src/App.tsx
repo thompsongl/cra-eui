@@ -1,18 +1,26 @@
 import * as React from 'react';
 
 import {
-  EuiIcon,
-  EuiSpacer,
+  getDefaultEuiMarkdownParsingPlugins,
+  getDefaultEuiMarkdownProcessingPlugins,
+  EuiMarkdownEditor,
 } from '@elastic/eui';
 
 import './App.css'
 
-export default () => {
+const processing = getDefaultEuiMarkdownProcessingPlugins();
+processing[1][1].components.timeline = () => <span>5</span>;
+const parsing = getDefaultEuiMarkdownParsingPlugins();
+export const Foo = () => {
   return (
     <div>
-      <EuiSpacer />
-      <EuiIcon type="reporter" size="l" />
-      <EuiSpacer />
+      <EuiMarkdownEditor
+        aria-label="test"
+        onChange={() => {}}
+        value="hello"
+        parsingPluginList={parsing}
+        processingPluginList={processing}
+      />
     </div>
   );
 };
