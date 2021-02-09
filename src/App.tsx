@@ -7,7 +7,7 @@ import {
 
 import './App.css'
 
-export default () => {
+export const App = () => {
   return (
     <div>
       <EuiSpacer />
